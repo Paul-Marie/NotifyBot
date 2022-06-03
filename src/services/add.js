@@ -11,6 +11,7 @@ module.exports = async (command) => {
       identifier: channel.id,
       guild: command.guild.id,
       type: command.options.getString("type"),
+      mode: command.options.getInteger("mode"),
       ...(message && { message })
     });
     return `Message ajouté dans le channel <#${channel.id}> !`;

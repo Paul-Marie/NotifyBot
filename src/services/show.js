@@ -6,7 +6,7 @@ module.exports = async (command) => {
     return "Permissions insufisante :(";
   const result = await Channel.find({ guild: command.guild.id });
   const content = result.map(c =>
-    `🔸 <#${c.identifier}> (${c.type === "world" ? "World" : "Field"} Boss): \`${c.message}\``
+    `🔸 <#${c.identifier}> (${c.type.charAt(0).toUpperCase()}${c.type.slice(1)}${c.type !== "arena" ? " Boss" : ''} ${c.mode ? '🕛' : '🕦'}): \`${c.message}\``
   ).join('\n');
   return { content, ephemeral: true };
 }
