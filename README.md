@@ -2,7 +2,7 @@
 
 # NotifyBot
 
-[![](https://img.shields.io/badge/Ajouter-NotifyBot-0199FE.svg?style=flat)](https://discord.com/api/oauth2/authorize?client_id=981840577794543666&permissions=277025655872&scope=bot%20applications.commands)
+[![](https://img.shields.io/badge/Add-NotifyBot-0199FE.svg?style=flat)](https://discord.com/api/oauth2/authorize?client_id=981840577794543666&permissions=277025655872&scope=bot%20applications.commands)
 [![](https://img.shields.io/badge/discord.js-v13.6.0-blue.svg?logo=npm)](https://github.com/discordjs)
 
 > Simple Ni No Kuni Discord bot notifying boss' arrival.
@@ -23,14 +23,14 @@ This bot use Discord' slash commands, in order to use it you need to invite it o
 🔸 `/show` -> Display all reminders on this Discord server
 
 The `message` posted musn't exceed 2500 char, and can mentions roles or peoples by mentionning the role or user directly using `<@id>` where `id` is user or role's Discord id.
-> Same goes for the smiley.
+> Same goes for emojis.
 
 In order to make more reliable notifications, you can choose whether the bot publishes 10 min before the boss arrives or on time
 
 |                                 | Notification schedule (mode: before) | Notification schedule (mode: now) |
 |---------------------------------|--------------------------------------|-----------------------------------|
 | Field Boss (Everyday)           | `3:50`, `9:50`, `15:50`, `21:50`     | `4:00`, `10:00`, `16:00`, `22:00` |
-| World Boss (Everyday)           | `3:50`, `9:50`, `15:50`, `21:50`     | `4:00`, `10:00`, `16:00`, `22:00` |
+| World Boss (Everyday)           | `3:20`, `9:20`, `15:20`, `21:20`     | `3:30`, `9:30`, `15:30`, `21:30`  |
 | Arena (Each Tuesday and Sunday) | `21:50`                              | `22:00`                           |
 
 ## Installation
