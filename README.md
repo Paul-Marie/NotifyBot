@@ -22,13 +22,16 @@ This bot use Discord' slash commands, in order to use it you need to invite it o
 
 🔸 `/show` -> Display all reminders on this Discord server
 
+The `message` posted musn't exceed 2500 char, and can mentions roles or peoples by mentionning the role or user directly using `<@id>` where `id` is user or role's Discord id.
+> Same goes for the smiley.
+
 In order to make more reliable notifications, you can choose whether the bot publishes 10 min before the boss arrives or on time
 
 |                                 | Notification schedule (mode: before) | Notification schedule (mode: now) |
 |---------------------------------|--------------------------------------|-----------------------------------|
-| Field Boss (Everyday)           | `4:50`, `10:50`, `16:50`, `22:50`    | `5:00`, `11:00`, `17:00`, `23:00` |
-| World Boss (Everyday)           | `4:50`, `10:50`, `16:50`, `22:50`    | `5:00`, `11:00`, `17:00`, `23:00` |
-| Arena (Each Tuesday and Sunday) | `22:50`                              | `23:00`                           |
+| Field Boss (Everyday)           | `3:50`, `9:50`, `15:50`, `21:50`     | `4:00`, `10:00`, `16:00`, `22:00` |
+| World Boss (Everyday)           | `3:50`, `9:50`, `15:50`, `21:50`     | `4:00`, `10:00`, `16:00`, `22:00` |
+| Arena (Each Tuesday and Sunday) | `21:50`                              | `22:00`                           |
 
 ## Installation
 
