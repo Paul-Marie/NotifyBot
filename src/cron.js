@@ -13,7 +13,7 @@ new CronJob("50 4,10,16,22 * * *", async () => {
 }, null, true, "Europe/Paris");
 
 // World Boss
-new CronJob("20 4,10,16,22 * * *", async () => {
+new CronJob("20 4,10,16 * * *", async () => {
   const result = await Channel.find({ type: "world", mode: { $ne: true } });
   await Promise.all(result.map(async ({ identifier, message }) => (
     await (bot.channels.cache.get(identifier)).send(message)
@@ -37,7 +37,7 @@ new CronJob("0 5,11,17,23 * * *", async () => {
 }, null, true, "Europe/Paris");
 
 // World Boss
-new CronJob("30 4,10,16,22 * * *", async () => {
+new CronJob("30 4,10,16 * * *", async () => {
   const result = await Channel.find({ type: "world", mode: true });
   await Promise.all(result.map(async ({ identifier, message }) => (
     await (bot.channels.cache.get(identifier)).send(message)
