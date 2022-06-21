@@ -8,7 +8,7 @@ const bot = new Client({ intents: [ Intents.FLAGS.GUILDS ] });
 new CronJob("50 4,10,16,22 * * *", async () => {
   const result = await Channel.find({ type: "field", mode: { $ne: true } });
   await Promise.all(result.map(async ({ identifier, message }) => (
-    await (bot.channels.cache.get(identifier)).send(message)
+    await (bot.channels.cache.get(identifier))?.send(message)
   )));
 }, null, true, "Europe/Paris");
 
@@ -16,7 +16,7 @@ new CronJob("50 4,10,16,22 * * *", async () => {
 new CronJob("20 4,10,16 * * *", async () => {
   const result = await Channel.find({ type: "world", mode: { $ne: true } });
   await Promise.all(result.map(async ({ identifier, message }) => (
-    await (bot.channels.cache.get(identifier)).send(message)
+    await (bot.channels.cache.get(identifier))?.send(message)
   )));
 }, null, true, "Europe/Paris");
 
@@ -24,7 +24,7 @@ new CronJob("20 4,10,16 * * *", async () => {
 new CronJob("50 22 * * 0,2", async () => {
   const result = await Channel.find({ type: "arena", mode: { $ne: true } });
   await Promise.all(result.map(async ({ identifier, message }) => (
-    await (bot.channels.cache.get(identifier)).send(message)
+    await (bot.channels.cache.get(identifier))?.send(message)
   )));
 }, null, true, "Europe/Paris");
 
@@ -32,7 +32,7 @@ new CronJob("50 22 * * 0,2", async () => {
 new CronJob("0 5,11,17,23 * * *", async () => {
   const result = await Channel.find({ type: "field", mode: true });
   await Promise.all(result.map(async ({ identifier, message }) => (
-    await (bot.channels.cache.get(identifier)).send(message)
+    await (bot.channels.cache.get(identifier))?.send(message)
   )));
 }, null, true, "Europe/Paris");
 
@@ -40,7 +40,7 @@ new CronJob("0 5,11,17,23 * * *", async () => {
 new CronJob("30 4,10,16 * * *", async () => {
   const result = await Channel.find({ type: "world", mode: true });
   await Promise.all(result.map(async ({ identifier, message }) => (
-    await (bot.channels.cache.get(identifier)).send(message)
+    await (bot.channels.cache.get(identifier))?.send(message)
   )));
 }, null, true, "Europe/Paris");
 
@@ -48,7 +48,7 @@ new CronJob("30 4,10,16 * * *", async () => {
 new CronJob("0 23 * * 0,2", async () => {
   const result = await Channel.find({ type: "arena", mode: true });
   await Promise.all(result.map(async ({ identifier, message }) => (
-    await (bot.channels.cache.get(identifier)).send(message)
+    await (bot.channels.cache.get(identifier))?.send(message)
   )));
 }, null, true, "Europe/Paris");
 
