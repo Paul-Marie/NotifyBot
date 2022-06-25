@@ -5,7 +5,7 @@ module.exports = {
     name: "channel",
     description: "Le channel ou le rappel se fera",
     type: 7,
-    channel_types: 0,
+    channel_types: [0],
     required: true
   }, {
     name: "type",
@@ -18,6 +18,9 @@ module.exports = {
     }, {
       name: "World Boss",
       value: "world"
+    }, {
+      name: "Chaos Boss",
+      value: "chaos"
     }, {
       name: "Arena",
       value: "arena"
