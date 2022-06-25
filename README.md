@@ -16,7 +16,7 @@ This bot use Discord' slash commands, in order to use it you need to invite it o
 
 🔸 `/help` -> Display the help menu
 
-🔸 `/add <channel> <type={FieldBoss,WorldBoss,Arena} [mode={before,now}] [message]` -> Add a reminder on a TextChannel (multiple on the same channel supported)
+🔸 `/add <channel> <type={FieldBoss,WorldBoss,ChaosBoss,Arena} [mode={before,now}] [message]` -> Add a reminder on a TextChannel (multiple on the same channel supported)
 
 🔸 `/remove <channel>` -> Delete all reminder on a TextChannel
 
@@ -29,8 +29,9 @@ In order to make more reliable notifications, you can choose whether the bot pub
 
 |                                 | Notification schedule (mode: before) | Notification schedule (mode: now) |
 |---------------------------------|--------------------------------------|-----------------------------------|
+| World Boss (Everyday)           | `3:20`, `9:20`, `15:20`              | `3:30`, `9:30`, `15:30`, `21:30`  |
 | Field Boss (Everyday)           | `3:50`, `9:50`, `15:50`, `21:50`     | `4:00`, `10:00`, `16:00`, `22:00` |
-| World Boss (Everyday)           | `3:20`, `9:20`, `15:20`              | `3:30`, `9:30`, `15:30`           |
+| Chaos Boss (Everyday)           | `4:20`, `10:20`, `16:20`, `22:20`     | `4:30`, `10:30`, `16:30`, `22:30` |
 | Arena (Each Tuesday and Sunday) | `21:50`                              | `22:00`                           |
 
 ## Installation

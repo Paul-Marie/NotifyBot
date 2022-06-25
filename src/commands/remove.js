@@ -5,7 +5,7 @@ module.exports = {
     name: "channel",
     description: "Le channel du rappel",
     type: 7,
-    channel_types: 0,
+    channel_types: [0],
     required: true
   }]
 };
