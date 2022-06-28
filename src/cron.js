@@ -42,7 +42,7 @@ new CronJob("20 5,11,17,23 * * *", async () => {
 }, null, true, "Europe/Paris");
 
 // Arena
-new CronJob("50 22 * * 0,2", async () => {
+new CronJob("50 20 * * 0,2", async () => {
   const result = await Channel.find({ type: "arena", mode: { $ne: true } });
   await Promise.all(result.map(async ({ identifier, message }) => (
     await (bot.channels.cache.get(identifier))?.send(message)

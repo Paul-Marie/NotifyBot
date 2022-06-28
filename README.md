@@ -32,7 +32,7 @@ In order to make more reliable notifications, you can choose whether the bot pub
 | World Boss (Everyday)           | `3:20`, `9:20`, `15:20`              | `3:30`, `9:30`, `15:30`, `21:30`  |
 | Field Boss (Everyday)           | `3:50`, `9:50`, `15:50`, `21:50`     | `4:00`, `10:00`, `16:00`, `22:00` |
 | Chaos Boss (Everyday)           | `4:20`, `10:20`, `16:20`, `22:20`     | `4:30`, `10:30`, `16:30`, `22:30` |
-| Arena (Each Tuesday and Sunday) | `21:50`                              | `22:00`                           |
+| Arena (Each Tuesday and Sunday) | `19:50`                              | `20:00`                           |
 
 ## Installation
 
